@@ -1,6 +1,26 @@
 #Define the grid 3*3
 
+def go_north(y):
+    y += 1
+    return y
+
+def go_south(y):
+    y -= 1
+    return y
+
+def go_east(x):
+    x += 1
+    return x
+
+def go_west(x):
+    x -= 1
+    return x
+
 y_grid = 1
+x_grid = 1
+
+print("(" + str(y_grid) + ", " + str(x_grid) + ")")
+
 
 #direction = str(input("Direction: "))
 
@@ -9,10 +29,6 @@ def go_north(y):
     return y
 
 y_grid = go_north(y)
-
-x = 1
-y = 1 
-
 
 print("You can travel: (N) orth.")
 
@@ -23,9 +39,3 @@ print("You can travel: (N) orth.")
 #If the player enters invalid direction, print "Not a valid direction!" and allows the player to enter the direction again
 #Tile (3,1) is the victory location. When entered progra notifies player of their victory and quits running
 
-<<<<<<< HEAD
-
-=======
-x = (1, 2, 3)
-print (x)
->>>>>>> fca961c4cbe5306fabfa87419081a9a06fc3fca2
