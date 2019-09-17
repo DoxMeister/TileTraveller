@@ -20,16 +20,20 @@ y_grid = 1
 x_grid = 1
 
 
+n = "(N) orth"
+s = "(S) outh"
+e = "(E) ast" 
+w = "(W) est"
+
+if y_grid == 1 and x_grid == 1:
+    print("You can travel: " + n)
+
 print("(" + str(y_grid) + ", " + str(x_grid) + ")")
 
 
 #direction = str(input("Direction: "))
 
-def go_north(y):
-    y += 1
-    return y
 
-y_grid = go_north(y)
 
 print("You can travel: (N) orth.")
 
