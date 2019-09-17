@@ -30,7 +30,13 @@ if y_grid == 1 and x_grid == 1:
 
 print("(" + str(y_grid) + ", " + str(x_grid) + ")")
 
+while x_grid != 2 and y_grid != 2:
 
+
+
+else:
+    print("Victory!")
+    break
 #direction = str(input("Direction: "))
 
 
