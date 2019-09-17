@@ -90,8 +90,8 @@ while True:
         x_grid = go_east(x_grid)
     elif direction == "w" or "W":
         x_grid = go_west(x_grid)
-    else:
-        print("Not a valid direction!")
+
+    print("Not a valid direction!")
 
 #direction = str(input("Direction: "))
 
