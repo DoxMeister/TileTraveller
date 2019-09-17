@@ -23,4 +23,9 @@ print("You can travel: (N) orth.")
 #If the player enters invalid direction, print "Not a valid direction!" and allows the player to enter the direction again
 #Tile (3,1) is the victory location. When entered progra notifies player of their victory and quits running
 
+<<<<<<< HEAD
 
+=======
+x = (1, 2, 3)
+print (x)
+>>>>>>> fca961c4cbe5306fabfa87419081a9a06fc3fca2
