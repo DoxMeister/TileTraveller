@@ -19,6 +19,7 @@ def go_west(x):
 y_grid = 1
 x_grid = 1
 
+
 print("(" + str(y_grid) + ", " + str(x_grid) + ")")
 
 
