@@ -25,23 +25,32 @@ s = "(S) outh"
 e = "(E) ast" 
 w = "(W) est"
 
-if y_grid == 1 and x_grid == 1:
-    print("You can travel: " + n)
 
-print("(" + str(y_grid) + ", " + str(x_grid) + ")")
 
 while x_grid != 2 and y_grid != 2:
 
+    if y_grid == 1 and x_grid == 1:
+        print("You can travel: " + n + ".")
 
-
+    direction = input("Direction: ")
+    if direction == "n" or "N":
+        y_grid = go_north(y_grid)
+    elif direction == "s" or "S":
+        y_grid = go_south(y_grid)
+    elif direction == "e" or "E":
+        x_grid = go_east(x_grid)
+    elif direction == "w" or "W":
+        x_grid = go_west(x_grid)
+    else:
+        print("Not a valid direction!")
+        continue
 else:
     print("Victory!")
-    break
 #direction = str(input("Direction: "))
 
 
 
-print("You can travel: (N) orth.")
+print("(" + str(x_grid) + ", " + str(y_grid) + ")")
 
 
 #Starts in (1,1)
